@@ -3,16 +3,17 @@ import Header from "./components/Header";
 import ProjectForm from "./components/ProjectForm";
 import Search from "./components/Search";
 import ProjectList from "./components/ProjectList";
+import hero from "./assets/download.jpeg";
+import imageCopy from "./assets/image copy.png";
+import image from "./assets/image.png";
 import "./App.css";
 
 function App() {
-  // A simple placeholder image (a gray box) encoded in base64 since the images i tried to use were not working
-  const placeholder = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH5QYXCxwS5v9vVAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLm3EAAABmklEQVR42u3dv0vDQBzA8S9pS9XWSR10shVcBAs66SCo4OLf4STiX6uDIn4shgo66CCIdXBy6SRisS6pS8VreS9D9S6X3C9I7v38uByX97673He5Y8S97Y9XUAsGBAOBAcFAYEAwEBgQDAQGBAOBAcFAYEAwEBgQDAQGBAOBAcFAYEAwEBgQDAQGBAOBAcFAYEAwEBgQDAQGBAOBAcFAYEAwEBgQDAQGBAOBAcFAYEAwEBgQDAQGBAOBAcFAYEAwEBgQDAQGBAOBAcFAYEAwEBgQDAQGBAOBAcFAYEAwEBgQDAQGBAOBAcFAYEAwEBgQDAQGBAOBAcFAYEAwEBgQDAQGBAOBAcFAYEAwEBgQDAQGBAOBAcFAYEAwEBgQDAQGBAOBAcFAYEAwEBgQDAQGBAOBAcFAYEAwEBgQDAQGBAOBAcFAYEAwEBgQDAQGBAOBAcFAbm0vA+AArp6Zz7YAAAAASUVORK5CYII=";
-
+ 
   const [projects, setProjects] = useState([
-    { id: 1, name: "Project One", image: placeholder },
-    { id: 2, name: "Project Two", image: placeholder },
-    { id: 3, name: "Project Three", image: placeholder }
+    { id: 1, name: "Web Development", image: hero },
+    { id: 2, name: "Robotics software development", image: imageCopy },
+    { id: 3, name: "Robotics engineering", image: image }
   ]);
   
   const [searchTerm, setSearchTerm] = useState("");
