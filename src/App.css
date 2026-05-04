@@ -1,0 +1,95 @@
+/* 1. Global Styles */
+body {
+  background-color: #121212; /* Deep Black (cuz why not?) */
+  color: #ffffff;           /* Crisp White */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2, h4 {
+  color: #ffffff;
+}
+
+/* 2. Header & Search Area */
+header, .searchbar, section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+input {
+  padding: 10px;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 5px;
+  width: 250px;
+  margin: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #121212;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #cccccc;
+}
+
+/* 3. The Responsive Grid */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+/* 4. Individual Project Card */
+.card {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* i wanted it to hover(a nice lift effect) */
+  border-color: #555;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* styling the image to cover the card nicely */
+}
+
+.card h4 {
+  padding: 15px;
+  margin: 0;
+}
+/* Removed those bullet points */
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+form, .searchbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  max-width: 400px;
+}
