@@ -18,11 +18,6 @@ function ProjectForm({ onAddProject }) {
         onChange={(e) => setName(e.target.value)} 
         placeholder="Project Name" 
       />
-      <input 
-        value={image} 
-        onChange={(e) => setImage(e.target.value)} 
-        placeholder="Image URL" 
-      />
       <button type="submit">Add Project</button>
     </form>
   );
